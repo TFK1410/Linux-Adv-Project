@@ -13,6 +13,11 @@
 ##########        BEGIN User part            ##########
 ##########       You can change it           ##########
 #######################################################
+BUILDROOT_PATH=/home/xubuntu/buildroot
+HOST_PATH=$(BUILDROOT_PATH)/output/host
+CC=$(HOST_PATH)/usr/bin/i686-buildroot-linux-uclibc-gcc
+SYSROOT=$(HOST_PATH)/usr/i686-buildroot-linux-uclibc/sysroot
+
 CFLAGS = -Wall -g -fPIC
 LDFLAGS = 
 SOURCES = person.c
